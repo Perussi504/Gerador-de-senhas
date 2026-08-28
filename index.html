@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gerador de Senhas (5 letras + 5 números)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Gerador de Senhas</h1>
+    <p>Gera senhas com 10 caracteres: obrigatoriamente 5 letras e 5 números.</p>
+
+    <div class="card">
+      <div class="result" id="password">—</div>
+      <div class="controls">
+        <button id="generateBtn">Gerar senha</button>
+        <button id="copyBtn" disabled>Copiar</button>
+      </div>
+      <label class="options">
+        <input type="checkbox" id="allowUppercase" checked />
+        Permitir letras maiúsculas
+      </label>
+      <div id="message" class="message" aria-live="polite"></div>
+    </div>
+
+    <footer>
+      <small>Feito rapidamente — 5 letras + 5 números por senha.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
